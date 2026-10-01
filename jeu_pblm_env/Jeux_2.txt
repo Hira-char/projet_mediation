@@ -1,0 +1,157 @@
+% IMPORTANT : Comme pour le compte rendu, compilez avec "XeLaTeX" ou "LuaLaTeX" sur Overleaf.
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, french, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{french}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+\title{\textbf{Dossier d'Atelier \& Revue Bibliographique}\\ \Large Atelier de Médiation Scientifique : \og Classer les problèmes environnementaux \fg{}}
+\author{Master 1 Informatique - Parcours Intelligence Artificielle}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction et Contexte}
+Ce document présente la conception pédagogique, le support bibliographique et le bilan attendu pour notre atelier de médiation scientifique court. D'une durée de \textbf{5 à 10 minutes}, cet atelier ludique place \textbf{l'Intelligence Artificielle et le numérique au cœur des débats}. Il vise à confronter les participants à leurs propres idées reçues en comparant l'empreinte carbone (émissions de CO2) des usages de l'IA face à la mobilité, aux transports et au quotidien.
+
+\vspace{0.5cm}
+
+\section{Description de l'Atelier : Détail du Jeu 2 (Émissions de CO2)}
+
+L'atelier repose sur l'utilisation de \textbf{quatre jeux de cartes}. Voici le détail complet du \textbf{Jeu 2 : Émissions de CO2}, composé de 15 cartes prêtes à l'emploi avec leurs valeurs et leurs sources officielles pour la correction :
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{L'envoi de 20 e-mails (sans pièce jointe)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~8 à 10 grammes de CO2 émis (stockage et transit sur les réseaux).
+        \item \textit{Source :} ADEME — \textit{Guide de la face cachée du numérique}.
+    \end{itemize}
+
+    \item \textbf{Une requête simple sur ChatGPT (ou un assistant textuel)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~4 à 5 grammes de CO2 (consommation électrique des serveurs et de l'inférence).
+        \item \textit{Source :} Luccioni et al. (Hugging Face / Mila, 2023) — \textit{Counting Carbon and Water: A Comparative Analysis of AI Generation Systems}.
+    \end{itemize}
+
+    \item \textbf{Faire 1 kilomètre en vélo (fabrication et effort inclus)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~21 grammes de CO2 (principalement lié à la production d'énergie humaine/alimentation).
+        \item \textit{Source :} ADEME — \textit{Base Empreinte / Comparatif des modes de transport}.
+    \end{itemize}
+
+    \item \textbf{Générer une image par Intelligence Artificielle (Midjourney / DALL-E)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~15 à 30 grammes de CO2 (équivalent à la charge électrique de recharger un smartphone plusieurs fois).
+        \item \textit{Source :} Luccioni et al. (2023) — Étude sur l'empreinte carbone des modèles génératifs.
+    \end{itemize}
+
+    \item \textbf{Regarder 1 heure de streaming vidéo en haute définition (HD)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~50 à 100 grammes de CO2 (selon le réseau, le terminal et la source d'électricité).
+        \item \textit{Source :} The Shift Project / ADEME — Rapport \textit{Climat : l'insoutenable usage du numérique}.
+    \end{itemize}
+
+    \item \textbf{Faire 1 kilomètre en voiture thermique (seul à bord)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~200 à 220 grammes de CO2 (combustion du carburant et fabrication du véhicule amortie).
+        \item \textit{Source :} ADEME — Base Carbone officielle (moyenne flotte automobile française).
+    \end{itemize}
+
+    \item \textbf{Créer une courte vidéo en ligne par IA générative}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~500 grammes à 1 kilogramme de CO2 (calculs extrêmement intensifs par les réseaux de neurones de type diffusion).
+        \item \textit{Source :} Souvenirs de recherche \& rapports sur l'inférence lourde en IA (Luccioni et al., 2023).
+    \end{itemize}
+
+    \item \textbf{La fabrication d'un ordinateur portable (neuf)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~150 à 300 kilogrammes de CO2 (extraction minière, assemblage, transport international).
+        \item \textit{Source :} ADEME — \textit{Analyse du cycle de vie (ACV) des équipements informatiques}.
+    \end{itemize}
+
+    \item \textbf{Un vol court-courrier Paris - Marseille (par passager)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~200 à 250 kilogrammes de CO2 par passager.
+        \item \textit{Source :} DGAC / ADEME — Outil de calcul d'impact des mobilités (Aviation civile).
+    \end{itemize}
+
+    \item \textbf{L'entraînement d'un grand modèle de langage (LLM majeur à sa conception)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~300 à 500 tonnes de CO2 (émissions directes et indirectes liées à la phase d'apprentissage intensif sur des clusters de GPU).
+        \item \textit{Source :} Strubell et al. (2019) / Luccioni et al. (2023) — \textit{Energy and Policy Considerations for Deep Learning in NLP}.
+    \end{itemize}
+
+    \item \textbf{Un vol long-courrier Paris - New York (par passager en classe éco)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~1 à 1,5 tonne de CO2 par passager.
+        \item \textit{Source :} GIEC / ADEME — Empreinte carbone des voyages transatlantiques.
+    \end{itemize}
+
+    \item \textbf{Les émissions annuelles de CO2 d'un Français moyen}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~9 à 10 tonnes de CO2 par an (tous postes confondus : logement, transport, alimentation, achats).
+        \item \textit{Source :} Haut Conseil pour le Climat (HCC) / Ministère de la Transition Écologique.
+    \end{itemize}
+
+    \item \textbf{L'empreinte carbone annuelle d'une PME de 50 employés}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~150 à 300 tonnes de CO2 par an.
+        \item \textit{Source : Bpifrance / ADEME} — Estimations sectorielles pour les petites et moyennes entreprises.
+    \end{itemize}
+
+    \item \textbf{Les émissions mondiales annuelles de l'aviation civile (global)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~900 millions à 1 milliard de tonnes de CO2 par an.
+        \item \textit{Source :} IATA (Association Internationale du Transport Aérien) / Agence Internationale de l'Énergie (AIE).
+    \end{itemize}
+
+    \item \textbf{Le secteur du numérique mondial (total des émissions annuelles)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~1 milliard de tonnes de CO2 par an (soit environ 3,5 à 4 \% des émissions mondiales de GES).
+        \item \textit{Source :} The Shift Project / The Shift Project & GreenIT / AIE.
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section*{Références et Revue Bibliographique}
+\begin{thebibliography}{99}
+
+\bibitem{vittascience}
+\textbf{[Outil / Plateforme]} Vittascience. \textit{Plateforme pour l'enseignement des sciences et de l'intelligence artificielle}. \\
+Disponible sur : \url{https://fr.vittascience.com/} (Consulté le [Date]).
+
+\bibitem{wu_chatgpt_water}
+\textbf{[IA \& Eau/Carbone]} Luccioni, A. S., et al. (2023). \textit{Counting Carbon and Water: A Comparative Analysis of AI Generation Systems}. Hugging Face / Mila.
+
+\bibitem{strubell_co2}
+\textbf{[IA \& CO2]} Strubell, E., Ganesh, A., \& McCallum, A. (2019). \textit{Energy and Policy Considerations for Deep Learning in NLP}. ACL.
+
+\bibitem{ademe_numerique}
+\textbf{[Numérique \& Climat]} ADEME \& Arcep. \textit{Évaluation de l'impact environnemental du numérique en France}.
+
+\bibitem{shift_project}
+\textbf{[Ressource Pédagogique]} The Shift Project. \textit{Pour une sobriété numérique}. Rapports sur l'impact carbone des usages du web et de la vidéo.
+
+\end{thebibliography}
+
+\vspace{0.5cm}
+
+\section{Bilan et Retours des Participants (Ce qu'ils doivent retenir)}
+
+À l'issue de cet atelier, le bilan qualitatif met en avant trois apprentissages clés axés sur l'IA :
+
+\begin{itemize}
+    \item \textbf{Démythifier l'immatériel de l'IA :} Le cloud et les modèles d'intelligence artificielle donnent l'illusion d'une immatérialité totale. L'atelier démontre que l'IA repose sur des infrastructures lourdes (serveurs, électricité, eau de refroidissement).
+    \item \textbf{La nuance des ordres de grandeur :} En comparant une requête ou une génération d'image par IA à des objets du quotidien (comme une bouteille de Coca) ou à des acteurs industriels mondiaux, les participants réalisent que l'impact d'une requête unitaire semble faible, mais devient colossal à l'échelle de l'utilisation globale des géants de la tech.
+    \item \textbf{Un levier d'écologie critique de l'IA :} L'objectif n'est pas d'interdire l'intelligence artificielle, mais de susciter un esprit critique pour distinguer les usages superflus (générations d'images/vidéos en série sans besoin réel) des applications à forte valeur ajoutée.
+\end{itemize}
+
+\end{document}

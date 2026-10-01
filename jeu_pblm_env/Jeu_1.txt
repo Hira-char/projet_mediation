@@ -1,0 +1,160 @@
+% IMPORTANT : Comme pour le compte rendu, compilez avec "XeLaTeX" ou "LuaLaTeX" sur Overleaf.
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, french, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{french}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+\title{\textbf{Dossier d'Atelier \& Revue Bibliographique}\\ \Large Atelier de Médiation Scientifique : \og Classer les problèmes environnementaux \fg{}}
+\author{Master 1 Informatique - Parcours Intelligence Artificielle}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction et Contexte}
+Ce document présente la conception pédagogique, le support bibliographique et le bilan attendu pour notre atelier de médiation scientifique court. D'une durée de \textbf{5 à 10 minutes}, cet atelier ludique place \textbf{l'Intelligence Artificielle et le numérique au cœur des débats}. Il vise à confronter les participants à leurs propres idées reçues en comparant l'empreinte environnementale (eau et CO2) des usages de l'IA (requêtes, génération de vidéos/images, entraînement) face à des géants de l'industrie traditionnelle (comme Coca-Cola ou Nestlé) et à des échelles de référence.
+
+\vspace{0.5cm}
+
+\section{Description de l'Atelier : Détail du Jeu 1 (Consommation d'Eau)}
+
+L'atelier repose sur l'utilisation de \textbf{quatre jeux de cartes}. Voici le détail complet du \textbf{Jeu 1 : Consommation d'Eau}, composé de 15 cartes prêtes à l'emploi avec leurs valeurs et leurs sources officielles pour la correction :
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{L'envoi d'un e-mail avec une pièce jointe de 1 Mo}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~0,01 à 0,02 litre (10 à 20 ml, lié à l'énergie de stockage et de transit).
+        \item \textit{Source :} ADEME \& Arcep — \textit{Évaluation de l'impact environnemental du numérique en France}.
+    \end{itemize}
+
+    \item \textbf{Une requête simple sur ChatGPT (ou un LLM textuel)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~0,5 à 1 litre d'eau (évaporation des data centers).
+        \item \textit{Source :} Luccioni et al. (Hugging Face / Mila, 2023) — \textit{Counting Carbon and Water: A Comparative Analysis of AI Generation Systems}.
+    \end{itemize}
+
+    \item \textbf{Générer une image par Intelligence Artificielle (Midjourney / DALL-E)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~2 à 3 litres d'eau (refroidissement des serveurs et calculs intensifs).
+        \item \textit{Source :} Idem, Luccioni et al. (2023) — \textit{Study on AI Generative Systems Water Footprint}.
+    \end{itemize}
+
+    \item \textbf{La fabrication d'une feuille de papier A4}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~2 à 10 litres d'eau (selon le procédé de fabrication et de recyclage).
+        \item \textit{Source :} CEPI (Confédération Européenne de l'Industrie des Pâtes et Papiers) / Études sectorielles.
+    \end{itemize}
+
+    \item \textbf{La fabrication d'une canette de soda / boisson Nestlé (33 cl)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~30 litres d'eau (empreinte eau de la chaîne agroalimentaire et d'embouteillage).
+        \item \textit{Source :} Rapports de durabilité de Nestlé Waters / Water Footprint Network.
+    \end{itemize}
+
+    \item \textbf{La fabrication d'une bouteille de 50 cl de Coca-Cola}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~35 litres d'eau (eau des ingrédients, culture du sucre et emballage).
+        \item \textit{Source :} The Coca-Cola Company \& The Nature Conservancy — \textit{Water Footprint Report}.
+    \end{itemize}
+
+    \item \textbf{Une douche rapide de 5 minutes}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~35 à 50 litres d'eau (selon le débit standard du pommeau).
+        \item \textit{Source :} ADEME — Guide pratique \textit{Économiser l'eau et l'énergie chez soi}.
+    \end{itemize}
+
+    \item \textbf{Le lavage d'une vaisselle à la main (robinet ouvert en continu)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~40 à 60 litres d'eau.
+        \item \textit{Source :} UFC-Que Choisir — Études comparatives sur la consommation domestique.
+    \end{itemize}
+
+    \item \textbf{La consommation d'eau d'un habitant en France (pour une journée)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~150 litres par jour (usages domestiques directs).
+        \item \textit{Source :} Centre d'Information sur l'Eau (CIEAU) / Ministère de la Transition Écologique.
+    \end{itemize}
+
+    \item \textbf{Remplir une baignoire standard}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~150 à 200 litres d'eau.
+        \item \textit{Source :} Observatoire des services publics d'eau et d'assainissement.
+    \end{itemize}
+
+    \item \textbf{La production d'une tablette de chocolat (100g)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~1 700 litres d'eau (irrigation et culture intensive des cacaoyers).
+        \item \textit{Source :} Mekonnen \& Hoekstra (University of Twente) — \textit{The green, blue and grey water footprint of crops}.
+    \end{itemize}
+
+    \item \textbf{La fabrication d'un smartphone (neuf)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~12 000 litres d'eau (extraction minière et fabrication des composants).
+        \item \textit{Source :} ADEME — \textit{Impact environnemental de la fabrication des équipements numériques}.
+    \end{itemize}
+
+    \item \textbf{La fabrication d'un jean en coton}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~7 500 à 10 000 litres d'eau (culture du coton, traitements et teinture).
+        \item \textit{Source :} Programme des Nations Unies pour l'Environnement (PNUE / UNEP).
+    \end{itemize}
+
+    \item \textbf{La production d'un kilogramme de bœuf}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} ~15 000 litres d'eau (abreuvement et alimentation sur l'ensemble du cycle de vie).
+        \item \textit{Source :} Mekonnen \& Hoekstra (2010) — Référence mondiale sur l'empreinte eau agricole.
+    \end{itemize}
+
+    \item \textbf{L'entraînement d'un grand modèle de langage (LLM majeur)}
+    \begin{itemize}
+        \item \textit{Valeur estimée :} Plusieurs millions de litres d'eau consommés par évaporation dans les data centers lors de la phase d'apprentissage (ex. : ~700 000 litres pour certains modèles de référence).
+        \item \textit{Source :} Lee et al. / Luccioni et al. (2023) — Recherche sur l'empreinte globale des IA génératives.
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section*{Références et Revue Bibliographique}
+\begin{thebibliography}{99}
+
+\bibitem{vittascience}
+\textbf{[Outil / Plateforme]} Vittascience. \textit{Plateforme pour l'enseignement des sciences et de l'intelligence artificielle}. \\
+Disponible sur : \url{https://fr.vittascience.com/} (Consulté le [Date]).
+
+\bibitem{wu_chatgpt_water}
+\textbf{[IA \& Eau]} Luccioni, A. S., et al. (2023). \textit{Counting Carbon and Water: A Comparative Analysis of AI Generation Systems}. Hugging Face / Mila.
+
+\bibitem{nestle_coca_water}
+\textbf{[Industrie \& Eau]} Rapports de Développement Durable \& Bilan Hydrique de The Coca-Cola Company et Nestlé.
+
+\bibitem{strubell_co2}
+\textbf{[IA \& CO2]} Strubell, E., Ganesh, A., \& McCallum, A. (2019). \textit{Energy and Policy Considerations for Deep Learning in NLP}. ACL.
+
+\bibitem{ademe_numerique}
+\textbf{[Numérique \& Climat]} ADEME \& Arcep. \textit{Évaluation de l'impact environnemental du numérique en France}.
+
+\bibitem{bilan_ges_entreprises}
+\textbf{[Rapports RSE]} Bilans Carbone / Scope 1, 2 et 3 publiés par les entreprises de la tech (Microsoft, Google, Amazon).
+
+\end{thebibliography}
+
+\vspace{0.5cm}
+
+\section{Bilan et Retours des Participants (Ce qu'ils doivent retenir)}
+
+À l'issue de cet atelier, le bilan qualitatif met en avant trois apprentissages clés axés sur l'IA :
+
+\begin{itemize}
+    \item \textbf{Démythifier l'immatériel de l'IA :} Le cloud et les modèles d'intelligence artificielle donnent l'illusion d'une immatérialité totale. L'atelier démontre que l'IA repose sur des infrastructures lourdes (serveurs, électricité, eau de refroidissement).
+    \item \textbf{La nuance des ordres de grandeur :} En comparant une requête ou une génération d'image par IA à des objets du quotidien (comme une bouteille de Coca) ou à des acteurs industriels mondiaux, les participants réalisent que l'impact d'une requête unitaire semble faible, mais devient colossal à l'échelle de l'utilisation globale des géants de la tech.
+    \item \textbf{Un levier d'écologie critique de l'IA :} L'objectif n'est pas d'interdire l'intelligence artificielle, mais de susciter un esprit critique pour distinguer les usages superflus (générations d'images/vidéos en série sans besoin réel) des applications à forte valeur ajoutée.
+\end{itemize}
+
+\end{document}
